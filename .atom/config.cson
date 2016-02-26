@@ -1,0 +1,102 @@
+"*":
+  "atom-chat":
+    username: "Tony"
+  "atom-css-comb":
+    projectConfigs: ".csscomb.json"
+    readyMadeConfigs: "csscomb"
+  "atom-csscomb":
+    configureWithJSON: true
+    configureWithPreset: "yandex"
+  "atom-material-ui":
+    colors:
+      abaseColor:
+        red: 33
+        green: 150
+        blue: 243
+        alpha: 1
+      genAccent: true
+      predefinedColor: "Blue"
+    fonts: {}
+    panels:
+      depth: true
+      panelContrast: true
+    tabs:
+      rippleAccentColor: true
+    treeView:
+      compactList: true
+      compactTreeView: false
+    ui:
+      panelContrast: true
+      panelShadows: true
+  "atom-minify": {}
+  "code-links":
+    modifierKey: "alt"
+  "coffee-compile": {}
+  "color-picker":
+    automaticReplace: true
+    randomColor: false
+    uppercaseColorValues: true
+  core:
+    disabledPackages: [
+      "coffee-compile"
+      "atom-chat"
+      "color-picker"
+      "source-preview-babel"
+    ]
+    themes: [
+      "atom-material-ui"
+      "atom-material-syntax"
+    ]
+  csscomb:
+    "remove-empty-rulesets": true,
+    "always-semicolon": true,
+    "color-case": "upper",
+    "block-indent": "    ",
+    "color-shorthand": false,
+    "element-case": "lower",
+    "eof-newline": true,
+    "leading-zero": true,
+    "quotes": "single",
+    "sort-order": ["..."],
+    "sort-order-fallback": "abc",
+    "space-before-colon": "",
+    "space-after-colon": " ",
+    "space-before-combinator": " ",
+    "space-after-combinator": " ",
+    "space-between-declarations": "\n",
+    "space-before-opening-brace": " ",
+    "space-after-opening-brace": "\n",
+    "space-after-selector-delimiter": "\n",
+    "space-before-selector-delimiter": "",
+    "space-before-closing-brace": "\n",
+    "strip-spaces": true,
+    "tab-size": true,
+    "unitless-zero": true,
+    "vendor-prefix-align": true
+  editor:
+    invisibles: {}
+    showIndentGuide: true
+    showInvisibles: true
+    softWrap: true
+    tabLength: 4
+  "exception-reporting":
+    userId: "072535c0-9a77-f7eb-f378-b1c43d336ed2"
+  "file-icons": {}
+  latex:
+    texPath: "C:\\texlive\\2015\\bin\\win32\\latex.exe"
+  linter: {}
+  "linter-php": {}
+  "merge-conflicts": {}
+  "one-dark-ui": {}
+  pastery:
+    apiKey: "HZdayf3sbK3EAK9xGSEHG2qS8YZMRgSC"
+    dismissAfter: 10
+  pigments: {}
+  "sass-compiler":
+    inputPath: "./scss"
+    inputPathExtracted: "../scss"
+    outputPath: "./css"
+  "standard-formatter":
+    style: "happiness"
+  welcome:
+    showOnStartup: false

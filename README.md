@@ -33,7 +33,7 @@ If there are any conficts, fix them any conflicts, add the files (`g a <filename
 
 ## Installing
 
-### On Linux:
+### Installing on Linux
 
 You need to have `git` and `wget` installed - e.g. `sudo apt-get install git wget` or `sudo yum install git wget`.
 
@@ -45,7 +45,7 @@ wget djm.me/cfg
 
 That's it. (See https://djm.me/cfg for the script source - don't execute scripts from the internet without knowing what they do!)
 
-### On Windows:
+### Installing on Windows:
 
 [Install Cygwin](https://cygwin.com/install.html) - select [any local mirror](https://cygwin.com/mirrors.html) (e.g. `mirrorservice.org` for UK), and when prompted add these packages:
 
@@ -78,7 +78,7 @@ Then run this to install some additional useful packages:
 apt-cyg install bash-completion bind-utils curl dos2unix git-completion less links ncurses tmux tree whois
 ```
 
-### On Git for Windows (formerly mSysGit):
+### Installing on Git for Windows (formerly mSysGit):
 
 I don't recommend [Git for Windows](https://msysgit.github.io/) any more, but it should still work:
 
@@ -87,6 +87,12 @@ cd
 curl djm.me/cfg > cfg
 . cfg
 ```
+
+## Upgrading
+
+When you log in, a maximum of once per day, dotfiles will automatically check for and install any updates.
+
+To upgrade manually, run `cfg pull` (or, equivalently, `cd; git pull`).
 
 ## Bash aliases
 
@@ -176,6 +182,26 @@ Combined with the `g` alias above, these make easy to type Git commands, e.g. `g
 | `sub`      | `submodule`                                   |                                                          |
 | `sync`     | `submodule sync; submodule update --init`     |                                                          |
 | `files`    | `ls-files | grep`                             | Find file by name                                        |
+
+## Vagrant shortcuts
+
+Combined with the `v` alias above, these make easy to type Vagrant commands, e.g. `v s` instead of `vagrant status`:
+
+| Alias      | Expansion                                     | Comments                                                 |
+|------------|-----------------------------------------------|----------------------------------------------------------|
+| `s`        | `status`                                      |                                                          |
+| `gs`       | `global-status`                               |                                                          |
+| `u`        | `up`                                          |                                                          |
+| `p`        | `provision`                                   |                                                          |
+| `d`/`down` | `suspend`                                     |                                                          |
+| `bu`       | `box update`                                  |                                                          |
+| `rebuild`  | `destroy && box update && up`                 |                                                          |
+| `hosts`    | `hostmanager`                                 | [Update /etc/hosts files](https://github.com/smdahlen/vagrant-hostmanager) |
+| `x`/`exec` | `ssh -c "cd /vagrant; $*"`                    | Run a command on the guest machine without opening Bash  |
+| `h`/`tmux` | `ssh -- -t 'tmux attach || tmux new'`         | More or less - see source for the full command!          |
+| `uh`       | `up && tmux`                                  |                                                          |
+
+Note: Since Vagrant doesn't really support aliases, this is actually a [Bash function](.bash/vagrant.bash) sitting in front of the real Vagrant.
 
 ## Automatic sudo
 
