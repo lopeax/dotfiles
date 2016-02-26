@@ -3,7 +3,7 @@
 if [ -n "$1" ]; then
     username=$1
 else
-    username=alberon
+    username=tony
 fi
 
 bzr lp-login $username
