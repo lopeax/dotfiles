@@ -56,6 +56,7 @@
 /.ssh/*
 !/.ssh/config
 !/.ssh/*.pub
+.ssh/github_rsa.pub
 
 # Vagrant
 !/.vagrant.d

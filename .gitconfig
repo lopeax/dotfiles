@@ -109,7 +109,7 @@
     yesterday    = log --decorate -p --since=yesterday
 
 [github]
-    user = alberon
+    user = lopeax
 
 [browser "none"]
     cmd = git-web-browser
@@ -128,3 +128,7 @@
 
 [rerere]
     enabled = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	required = true
