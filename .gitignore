@@ -38,6 +38,7 @@
 /.elinks/bookmarks
 /.elinks/cookies
 /.elinks/globhist
+/.elinks/searchhist
 
 # Grip - config only, not cache & access token
 !/.grip
@@ -56,6 +57,7 @@
 /.ssh/*
 !/.ssh/config
 !/.ssh/*.pub
+.ssh/github_rsa.pub
 
 # Vagrant
 !/.vagrant.d
