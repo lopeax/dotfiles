@@ -1,6 +1,6 @@
 if v:version >= 700
 
-    let snips_author = 'Tony Lopez'
+    let snips_author = 'Izzy Skye'
 
     if !exists('g:snipMate')
       let g:snipMate = {}

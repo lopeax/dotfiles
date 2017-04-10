@@ -1,1 +1,1 @@
-EMAIL=tony@alberon.co.uk
+EMAIL=izzy@alberon.co.uk
